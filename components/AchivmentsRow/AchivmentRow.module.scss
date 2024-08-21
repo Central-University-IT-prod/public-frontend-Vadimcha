@@ -1,0 +1,12 @@
+.achivmentsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 650px) {
+  .achivmentsRow {
+    justify-content: space-between;
+    gap: 5px;
+  }
+}

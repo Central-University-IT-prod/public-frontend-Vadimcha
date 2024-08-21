@@ -1,0 +1,63 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  grid-row-gap: 50px;
+  grid-template-areas:
+    "user DayForm TimeForm"
+    "achivments achivments achivments";
+  justify-content: stretch;
+}
+
+.user {
+  width: 90%;
+  grid-area: user;
+  margin: 0 auto;
+
+  &__icon {
+    width: 100%;
+  }
+  .user__userName {
+    font-size: .95rem;
+  }
+}
+
+.DayForm {
+  grid-area: DayForm;
+}
+
+.TimeForm {
+  grid-area: TimeForm;
+}
+
+.achivments {
+  grid-area: achivments;
+  padding: 0 10px;
+  &__title {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 650px) {
+  .user {
+    width: 180px;
+    &__userName {
+      font-size: .9rem;
+    }
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "user"
+      "DayForm"
+      "TimeForm"
+      "achivments ";
+    justify-content: stretch;
+    grid-row-gap: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .charts {
+    margin-bottom: 15px;
+  }
+}

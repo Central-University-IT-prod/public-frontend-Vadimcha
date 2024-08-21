@@ -1,0 +1,22 @@
+.content {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 3px;
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.inactive {
+  filter: brightness(50%);
+}
+
+@media (max-width: 650px) {
+  .content {
+    width: 160px;
+  }
+}

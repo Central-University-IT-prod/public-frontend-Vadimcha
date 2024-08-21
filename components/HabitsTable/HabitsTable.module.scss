@@ -1,0 +1,50 @@
+.progress {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+}
+
+.progressText {
+  font-size: .8rem;
+  width: fit-content;
+}
+
+.progressBar {
+  height: 5px;
+  width: 95%;
+  min-width: 90px;
+}
+
+.checkboxBox {
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+}
+
+.no_habit {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.column_name {
+  width: fit-content;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .centerBlock {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .name {
+    font-size: .8rem;
+  }
+}

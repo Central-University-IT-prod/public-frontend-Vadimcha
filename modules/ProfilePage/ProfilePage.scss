@@ -1,0 +1,15 @@
+.recharts-surface {
+  width: 90% !important;
+}
+
+@media (max-width: 650px) {
+  .recharts-surface {
+    width: 95% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .recharts-surface {
+    width: 90% !important;
+  }
+}
